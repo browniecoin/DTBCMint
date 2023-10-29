@@ -133,7 +133,7 @@ class App extends Component {
 
           const { abi } = require('../abis/DTBC.json');
 
-          var smart_contract_interface = new web3.eth.Contract(abi, '0x--')
+          var smart_contract_interface = new web3.eth.Contract(abi, '0xC9Fd3a785fDC9c796Dea0317163B7aF7CcC3299F')
 
 
           const { abierc } = require('../abis/PepeToken.json');
@@ -257,7 +257,7 @@ claimPunk = async (punkIndex) => {
 
   const cryptoBoysContract = this.state.cryptoBoysContract;
   const accountAddress = this.state.accountAddress;
-  const hardcodedAmount = 0.001;
+  const hardcodedAmount = 0.0045;
 
   try {
     const totalSupply = await cryptoBoysContract.methods.totalSupply().call();
