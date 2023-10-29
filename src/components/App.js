@@ -257,7 +257,7 @@ claimPunk = async (punkIndex) => {
 
   const cryptoBoysContract = this.state.cryptoBoysContract;
   const accountAddress = this.state.accountAddress;
-  const hardcodedAmount = 0.0045;
+  const hardcodedAmount = 0.001;
 
   try {
     const totalSupply = await cryptoBoysContract.methods.totalSupply().call();
